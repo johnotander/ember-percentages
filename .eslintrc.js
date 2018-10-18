@@ -1,3 +1,4 @@
+
 module.exports = {
   root: true,
   parserOptions: {
@@ -11,8 +12,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:ember/recommended'
   ],
-  env: {
-    browser: true
+  env:  {
+    browser: true,
+    node: true,
   },
   rules: {
   },
