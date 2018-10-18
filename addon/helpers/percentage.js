@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 
 export function percentage(pct, opts) {
   opts = opts || {};
@@ -9,4 +9,4 @@ export function percentage(pct, opts) {
   return `${value.toFixed(value % 1 === 0 ? 0 : numDecimals)}%`;
 }
 
-export default Ember.Helper.helper(percentage);
+export default helper(percentage);
